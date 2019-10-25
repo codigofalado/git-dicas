@@ -12,9 +12,9 @@ Futuro Ben, de nada!
 * [Eu quero mostrar o status do branch atual.](#eu-quero-mostrar-o-status-do-branch-atual)
 * [Eu quero criar um novo branch baseado no branch atual.](#eu-quero-criar-um-novo-branch-baseado-no-branch-atual)
 * [I want to checkout the previous branch that I was on.](#i-want-to-checkout-the-previous-branch-that-i-was-on)
-* [I want to list the files that have been modified in the current working tree.](#i-want-to-list-the-files-that-have-been-modified-in-the-current-working-tree)
+* [Eu quero listar quais arquivos foram modificados na branch atual.](#eu-quero-listar-quais-arquivos-foram-modificados-na-branch-atual)
 * [I want to view the changes that were made in a given commit.](#i-want-to-view-the-changes-that-were-made-in-a-given-commit)
-* [I want to list the files that were changed in a given commit.](#i-want-to-list-the-files-that-were-changed-in-a-given-commit)
+* [Eu quero listar os arquivos que foram alterados em um determinado commit.](#eu-quero-listar-os-arquivos-que-foram-alterados-em-um-determinado-commit)
 * [I want to view the changes that were made across multiple commits.](#i-want-to-view-the-changes-that-were-made-across-multiple-commits)
 * [I want to view the changes that were made in a given file.](#i-want-to-view-the-changes-that-were-made-in-a-given-file)
 * [I want to view the contents of a file in a given commit.](#i-want-to-view-the-contents-of-a-file-in-a-given-commit)
@@ -103,9 +103,9 @@ git checkout master
 git cherry-pick -
 ```
 
-### I want to list the files that have been modified in the current working tree.
+### Eu quero listar quais arquivos foram modificados na branch atual.
 
-By default, when you call `git diff`, you see all of the content that has been modified in the current working tree (and not yet staged). However, you can use the `--stat` modifier to simply list the files that have been modified:
+Por padrão, ao executar `git diff`, você vê todo o conteúdo que foi modificado na branch atual (que ainda nao está preparado para o commit). Porém, caso você use `--stat`, listara apenas os arquivos que foram modificados:
 
 ```sh
 git diff --stat
@@ -144,12 +144,12 @@ git show my-feature~~
 git show my-feature~~~
 ```
 
-### I want to list the files that were changed in a given commit.
+### Eu quero listar os arquivos que foram alterados em um determinado commit.
 
-Just as with `git diff`, you can limit the output of the `git show` command using the `--stat` modifier. This will list the files that were changed in the given commit:
+Assim como no `git diff`, você pode limitar a saída do comando `git show` usando o modificador `--stat`. Isso listará os arquivos que foram alterados no commit fornecido.
 
 ```sh
-# Outputs the list of files changed in the commit with the given hash.
+Mostra a lista de arquivos alterados no código de commit fornecido.
 git show 19e771 --stat
 ```
 
